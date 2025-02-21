@@ -7,28 +7,16 @@ const Footer = () => {
   return (
     <div id="contact" className='footer-container'>
       <div className='footer-content'>
-        <div className='top-section'>
-        <div className='top-section-description'>
-        <h2> 
-            Subscribe Our NewsLetter
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate esse laudantium voluptate nobis? Ipsa sit et voluptas illo aperiam molestiae!</p>
-        </div>
-        <div className='footer-input'>
-        <input type='text' placeholder='Enter Email'/>
-        <button>Subscribe</button>
-        </div>
-        </div>
         <div className='bottom-section'>
         <div className='footer-layer'>
         <div className='footerA'>
         <div className='logo'>
-        <div className='title'>
-        <h1>waterllo</h1>
-        <p>At your service</p>
+        <div className='title saint'>
+        <h1>Aimer</h1>
+        <p>Cleaning Services</p>
         </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, suscipit aliquid consequatur dolore reiciendis deleniti.</p>
+        <p className='premium'>Premium cleaning services tailored to your needs, ensuring a spotless, fresh, and inviting space every time. Quality guaranteed!.</p>
         <div className='footer-cta'>
         <FiFacebook />
         <SlSocialLinkedin />
@@ -41,7 +29,6 @@ const Footer = () => {
             <p>Contact</p>
             <p>FAQ+</p>
             <p>Services</p>
-            <p>Lorem</p>
         </div>
         <div className='footerC'>
             <h3>Our Services</h3>
@@ -53,18 +40,15 @@ const Footer = () => {
         </div>
         <div className='footerD'>
         <h3>Contact Us</h3>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem, ipsum dolor.</p>
-        <p>Lorem, ipsum dolor.</p>
+        <p>+1 (431) 334-5256</p>
+        <p>aimercleaning@gmail.com</p>
         </div>
         </div>
         <div className='footer-last'>
-        <h4>Lorem ipsum dolor sit amet.</h4>
-        <span>
-            <h4>Lorem, ipsum.</h4>
-            <h4>Lorem, ipsum.</h4>
+        <h4>Aimer</h4>
+        <span className='aimer'>
+            <h4>+1 (431) 334-5256</h4>
+            <h4>aimercleaning@gmail.com</h4>
         </span>
         </div>
         </div>

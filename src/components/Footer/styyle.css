@@ -1,5 +1,5 @@
 .footer-container{
-    padding: 40px 180px;
+    padding: 40px 100px;
     background-color: black;
     color: white;
 }
@@ -92,13 +92,33 @@
     }
 
 }
-@media screen and (max-width: 992px){
+
+@media screen and (width: 1024px){
     .footer-container{
-        padding: 50px 100px;
+        width: 1200px;
+        padding: 50px;
+    }
+    .footer-input > button{
+        padding: 15px 14px;
+    }
+    .footer-input > input{
+        padding: 15px 18px;
+    }
+    .top-section-description > h2{
+        font-size: 25px;
     }
 }
-
-@media screen and (min-width: 768px){
+@media screen and (max-width: 992px){
+    .footer-container{
+        padding: 50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:912px){
+    .premium{
+        width: 200px !important;
+    }
+}
+@media screen and (width: 820px){
 .footer-container{
     padding: 25px;
 }
@@ -160,7 +180,11 @@
     }
 }
 
-
+@media (width:430px){
+    .footer-container{
+        width: 450px;
+    }
+}
 @media(max-width: 420px){
 .footer-container{
     padding: 10px;
@@ -171,4 +195,24 @@
 .footer-input > input{
     padding: 15px 18px;
 }
+.saint{
+    margin-top: 50px;
+}
+.bottom-section{
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.footer-last > span {
+    display: flex;
+    flex-direction: column;
+}
+.aimer > h4{
+    margin: 0px;
+}
+}
+
+@media(max-width: 360px){
+    .footer-container{
+        width: 380px;
+    }
 }

@@ -19,12 +19,18 @@ const Navbar = () => {
       function handleHomeNavigate(){
         navigate('/')
       }
+      function handleContactNavigate(){
+        navigate('/Contact')
+      }
+      function handlePricingNavigate(){
+        navigate('/Pricing')
+      }
   return (
           <nav>
             <div className='logo'>
           <div className='title'>
-          <h1>waterllo</h1>
-          <p>At your service</p>
+          <h1>Aimer</h1>
+          <p>Cleaning Services</p>
           </div>
           </div>
           {/* <div className='nav-content'> */}
@@ -38,16 +44,16 @@ const Navbar = () => {
             <a onClick={handleServiceNavigate}>
               <li className='nav-list'>Services</li>
             </a>
-            <a>
+            <a onClick={handlePricingNavigate}>
                <li className='nav-list'>Pricing</li>
             </a>
            <a href='#blog'>
-            <li className='nav-list'>Blog</li>
+            <li className='nav-list'>Reviews</li>
            </a>
-           <a href='contact'>
+           <a onClick={handleContactNavigate}>
             <li className='nav-list'>Contact</li>
            </a>
-            <div className='cta'>
+            <div onClick={handleContactNavigate} className='cta'>
            Free Consultation
           </div>
             <button className='nav-btn nav-close-btn'>

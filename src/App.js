@@ -8,6 +8,9 @@ import Footer from './components/Footer/Footer';
 import Aboutx from './components/Aboutx/Aboutx';
 import Servicex from './components/Servicex/Servicex';
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
+import ScrollToTop from './components/ScrollToTop';
+import Contact from './components/Contact/Contact';
+import Pricing from './components/Pricing/Pricing'
 // import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 // import About from './components/About/About';
 // import Header from './components/Header/Header';
@@ -20,13 +23,16 @@ function App() {
   return (
     <div className="App">
       <Router>
+     <ScrollToTop />
       <Navbar />
         <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<Aboutx />}/>
         <Route path='/Service' element={<Servicex />}/>
+        <Route path='/Contact' element={<Contact />}/>
+        <Route path='/Pricing' element={<Pricing />}/>
       </Routes>
-    // <ScrollToTopButton />
+    <ScrollToTopButton />
      <Footer />
       </Router>
    {/* <Navbar />

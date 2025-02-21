@@ -1,23 +1,22 @@
 const data = [
     {
       id  : '1',
-      question: "Free Lifetime Support",
+      question: "Office Cleaning Experts",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus, corrupti ratione facere cumque ad.",
+        "Trusted professionals ensuring a pristine workspace, boosting productivity with every clean. Satisfaction guaranteed!",
     },
     {
       id  : '2',
-      question: "100% Satisfaction Guarantee",
+      question: "Eco-Friendly Cleaning",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus, corrupti ratione facere cumque ad.",
+        "Green cleaning solutions that are safe for your space and the planet. Sparkling results!",
     },
     {
       id  : '3',
-      question: "Expert & Experience Cleaning Staff",
+      question: "Deep Cleaning Specialists",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus, corrupti ratione facere cumque ad.",
+        "Transforming spaces with meticulous deep cleaning, leaving no corner untouched. Perfectly spotless every time!",
     },
 
   ];
-
   export default data;

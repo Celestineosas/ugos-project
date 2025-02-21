@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+    color: #092819;
+}
 .header{
     background-color: #fde7b3;
     height: 650px;
@@ -220,7 +224,7 @@ margin-bottom: 0;
     font-size: 13px;
     color: #666666;
 }
-@media(width: 1024px ){
+/* @media(width: 1024px ){
     .header{
         width: 1024px;
     
@@ -232,13 +236,15 @@ margin-bottom: 0;
     nav{
         width: 1024px;
     }
-}
+} */
 @media (max-width : 1235px){
     .header{
         padding: 50px;
+      
     }
     nav{
         padding: 15px;
+        
     }
     .title > p{
         white-space: nowrap;
@@ -258,25 +264,50 @@ margin-bottom: 0;
     }
 }
 
-@media(width: 1024px){
+@media screen and (width: 1024px){
     .header{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 50px;
-        width: 1024px !important;
+        padding: 50px 50px 0px 50px;
+        width: 1220px;
+
     }
     nav{
-       gap: 8px;
-       width: 1024px !important;
-       
+       gap: 60px;
+       padding-left: 100px;
+       width: 1220px;
     }
-    .content{
-        width: 100%;
+
+    .nav-list{
+        font-size: 16px;
+
+    }
+    .cta{
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    .cta2{
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+    .play{
+        font-size: 35px;
+}
+.wos > p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.details > span > h3{
+    font-weight: 800;
+    font-size: 22px;
     }
 
 }
+
+
+
 /* @media(width: 1024px){
     nav{
         width: 912px;
@@ -284,36 +315,144 @@ margin-bottom: 0;
 } */
 @media screen and (width: 912px){
 .header{
-    width: 912px !important;
+    width: 895px;
     padding: 10px;
     height: 900px;
 }
+.content-img{
+    width: 650px;
+    margin-top: -70px;
+}
 nav{
-    width: 912px !important;
+    width: 895px;
     display: flex;
     gap: 0px ;
   
 }
+.nav-list{
+    margin-left: 10px;
+}
 .nav-menu{
     gap: 0px;
-    margin-left: -35px;
+    margin-left: -25px;
 }
 .content{
     display: flex;
     padding-top: 80px;
     flex-direction: column;
     align-items: center;
+    width: 800px;
+}
+}
+@media screen and (min-width: 912px) and (max-width:1200px){
+    nav{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .about-container{
+        width: 100%;
+    }
+    .aboutx-container{
+        width: 100%;
+    }
+    .service-container{
+        width: 100%;
+        padding: 50px !important;
+    }
+    .servicex-container{
+        width: 100%;
+    }
+    .cleaning-container{
+        width: 100%;
+    }
+    .blog-container{
+        width: 100%;
+    }
+    .contact-container{
+        width: 100%;
+    }
+    nav{
+        width: 100% imo !important;
+        display: flex;
+        padding-left:50px;
+        gap:50px;   
+    }
+    .nav-menu{
+        padding-right: 50px;
+      
+    }
+    .nav-list{
+        margin-right: 25px;
+    }
+    .cta{
+        margin-left: 20px;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        height: 770px;
+    }
+    .content-img{
+        margin-top: -140px;
+    }
+    .nav-list{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .about-content{
+        display: flex;
+        align-items: center;
+    }
+    .footer-container{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .layer{
+        width: 500px;
+    }
+    .layer > p{
+     width: 100% !important;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width:912px){
+.nav-menu{
+    padding-left: 0px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 770px;
+}
+.content-img{
+    margin-top: -140px;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-container{
+    padding: 10px;
+}
+.nav-list{
+    margin: 10px;
 }
 }
 @media screen and (width: 820px){
    .header{
-    width: 820px;
+    width: 750px;
     padding: 50px;
     height: 800px;
 
    }
    
     .content{
+        width: 600px;
         padding-top: 50px;
         display: flex;
         flex-direction: column;
@@ -327,17 +466,19 @@ nav{
       
     }
     .nav-menu{
-        margin-left: -30px;
+        margin-left: -10px;
     }
     .content-img{
         width: 550px;
         margin-top: -80px;
     }
     .nav-list{
-        margin: 5px;
+        margin: 10px;
     }
 
 }
+
+
 
 @media screen and (width: 768px){
     .header{

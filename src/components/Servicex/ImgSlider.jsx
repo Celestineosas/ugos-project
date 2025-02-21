@@ -34,40 +34,25 @@ return(
     
 <Slider {...settings} >
 <div>
-<img src='./images/istockphoto-1332613500-612x612.jpg' />
-<h2>Express cleaning</h2>
-<p>Lorem</p>
+<img src='./images/istockphoto-1408477638-612x612.jpg' />
+<h2>Post Construction</h2>
 </div>
 <div className='carousel-content'>
 
-<img src='./images/istockphoto-1332613500-612x612.jpg' />
-<h2>Express cleaning</h2>
-<p>Lorem</p>
-
-</div>
-<div className='carousel-content'>
-
-<img src='./images/istockphoto-1332613500-612x612.jpg' />
-<h2>Express cleaning</h2>
-<p>Lorem</p>
-</div>
-<div className='carousel-content'>
-<img src='./images/istockphoto-1332613500-612x612.jpg' />
-<h2>Express cleaning</h2>
-<p>Lorem</p>
+<img src='./images/istockphoto-1026448826-612x612.jpg' />
+<h2>Air BnB cleaning</h2>
 
 </div>
 <div className='carousel-content'>
 
-<img src='./images/istockphoto-1332613500-612x612.jpg' />
-<h2>Express cleaning</h2>
-<p>Lorem</p>
+<img src='./images/istockphoto-623876738-612x612.jpg' />
+<h2>Moving out cleaning</h2>
+
 </div>
 <div className='carousel-content'>
 
-<img src='./images/istockphoto-1332613500-612x612.jpg' />
-<h2>Express cleaning</h2>
-<p>Lorem</p>
+<img src='.\images\istockphoto-1314308369-612x612.jpg' />
+<h2>Carpet cleaning</h2>
 </div>
 </Slider>
 )

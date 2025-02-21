@@ -72,6 +72,16 @@ margin-bottom: 20px;
     .service-container{
         width: 1024px;
     }
+.service-description > h3{
+    font-size: 25px;
+}
+.service-description > h1{
+    font-size: 30px;
+}
+.service-cta{
+padding: 15px 45px;
+font-size: 15px;
+}
 }
 @media(max-width: 992px){
     .service-container{
@@ -82,8 +92,22 @@ margin-bottom: 20px;
 }
 }
 
+@media(width: 912px){
 
-@media screen and (min-width: 768px){
+    .service-description > h3{
+        font-size: 25px;
+    }
+    .service-description > h1{
+        font-size: 30px;
+    }
+    .service-cta{
+    padding: 15px 25px;
+    font-size: 15px;
+    }
+
+}
+
+@media screen and (width: 820px){
 .service-container{
     padding: 50px;
 }

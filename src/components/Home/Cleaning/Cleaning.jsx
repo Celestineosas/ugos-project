@@ -44,36 +44,36 @@ const Cleaning = () => {
     <div className='card'>
     <div className='card-list'>
     <MdCleanHands  className='size' color='blue'/>
-    <h2>House Claening</h2>
-    <p>Lorem ipsu dolor sit amet consectetur adipisicing elit. Esse atque dicta maxime cum, tempore ipsum?</p>
+    <h2>House Cleaning</h2>
+    <p>Transform your home with thorough, reliable cleaning for a fresh and spotless living space.</p>
     </div> 
     </div>
     <div className='card'>
     <div className='card-list'>
     <GiKitchenTap  className='size' color='green'/>
-    <h2>Kitchen Cleaning</h2>
-    <p>Lorem ipsu dolor sit amet consectetur adipisicing elit. Esse atque dicta maxime cum, tempore ipsum?</p>
+    <h2>Air BnB Cleaning</h2>
+    <p>Deep cleaning services to ensure a hygienic, sparkling, and perfectly organized kitchen area.</p>
     </div> 
     </div>
     <div className='card'>
     <div className='card-list'>
     <GiFloorPolisher className='size' color='yellow'/>
-    <h2>Floor Cleaning</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque dicta maxime cum, tempore ipsum?</p>
+    <h2>Post Construction</h2>
+    <p>Restore the shine and cleanliness of your floors with expert care and attention.</p>
     </div> 
     </div>
     <div className='card'>
     <div className='card-list'>
     <FaToilet className='size' color='orange'/>
-    <h2>Bathroom Cleaning</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque dicta maxime cum, tempore ipsum?</p>
+    <h2>Commercial Cleaning</h2>
+    <p>Professional sanitization for a clean, fresh, and germ-free bathroom every single time.</p>
     </div> 
     </div>
     <div className='card'>
     <div className='card-list'>
     <GiOfficeChair className='size' color='purple'/>
-    <h2>House Cleaning</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque dicta maxime cum, tempore ipsum?</p>
+    <h2>Office Cleaning</h2>
+    <p>Boost productivity with professional office cleaning for a tidy and welcoming workspace environment.</p>
     </div> 
     </div>
     <div className='card black'>

@@ -1,5 +1,5 @@
 .cleaning-container{
-    padding: 50px 180px;
+    padding: 50px;
     align-items: center;
     text-align: center;
  }
@@ -26,6 +26,7 @@ padding: 10px 20px;
 }
 .card-list h2{
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .black{
     background-color: black;
@@ -43,7 +44,28 @@ padding: 10px 20px;
 .size{
   font-size: 40px;
 }
-@media screen and (min-width: 768px){
+
+@media(width: 1024px){
+  .cleaning-container{
+    width: 1200px;
+    padding: 50px;
+  }
+  .card-list > h2{
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .cleaning-description > h3{
+    font-size: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:912px){
+    .card-list > h2{
+      font-size: 18px;
+    }
+}
+@media screen and (width: 820px){
   .cleaning-container{
     padding: 50px;
   }
@@ -97,6 +119,14 @@ padding: 10px 20px;
   font-size: 28px;
   font-weight: 700;
 }
+}
+@media (width:430px){
+  .cleaning-description{
+    margin-left: 90px;
+  }
+  .card{
+    margin-right: 60px;
+  }
 }
 @media(max-width: 420px){ 
   .cleaning-container{
