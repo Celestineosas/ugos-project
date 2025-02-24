@@ -27,20 +27,7 @@ const Header = () => {
             <p>+1 (431) 334-5256</p>
           </a>
         </div>
-        <div className='details'>
-          <span>
-            <h3>760+</h3>
-            <p>Total Customer</p>
-          </span>
-          <span>
-            <h3>10+</h3>
-            <p>Years Experience</p>
-          </span>
-          <span>
-            <h3>328+</h3>
-            <p>Team Members</p>
-          </span>
-        </div>
+        
       </div>
       <img src='./images/cleaningservice-cuate.png' className='content-img' alt='img'/>
      </div>

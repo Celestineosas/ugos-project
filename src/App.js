@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
+import FAQ from './components/FAQ/Faq';
+import Review from './components/Review/Review';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Aboutx from './components/Aboutx/Aboutx';
@@ -11,6 +13,8 @@ import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
 import Contact from './components/Contact/Contact';
 import Pricing from './components/Pricing/Pricing'
+
+
 // import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 // import About from './components/About/About';
 // import Header from './components/Header/Header';
@@ -31,6 +35,8 @@ function App() {
         <Route path='/Service' element={<Servicex />}/>
         <Route path='/Contact' element={<Contact />}/>
         <Route path='/Pricing' element={<Pricing />}/>
+        <Route path='/FAQ' element={<FAQ />}/>
+        <Route path="/review" element={<Review />} />
       </Routes>
     <ScrollToTopButton />
      <Footer />

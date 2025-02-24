@@ -25,6 +25,9 @@ const Navbar = () => {
       function handlePricingNavigate(){
         navigate('/Pricing')
       }
+      function handleReviewNavigate(){
+        navigate('/Review')
+      }
   return (
           <nav>
             <div className='logo'>
@@ -47,7 +50,7 @@ const Navbar = () => {
             <a onClick={handlePricingNavigate}>
                <li className='nav-list'>Pricing</li>
             </a>
-           <a href='#blog'>
+           <a onClick={handleReviewNavigate}>
             <li className='nav-list'>Reviews</li>
            </a>
            <a onClick={handleContactNavigate}>

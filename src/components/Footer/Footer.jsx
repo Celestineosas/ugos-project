@@ -2,6 +2,7 @@ import React from 'react'
 import './styyle.css'
 import { FiFacebook, FiTwitter} from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,32 +26,37 @@ const Footer = () => {
         </div>
         <div className='footerB'>
             <h3>Company</h3>
-            <p>Home</p>
-            <p>Contact</p>
-            <p>FAQ+</p>
-            <p>Services</p>
+            <p><Link to="/" className="footer-link">Home</Link></p>
+            <p><Link to="/Contact" className="footer-link">Contact</Link></p>
+            <p><Link to="/FAQ" className="footer-link">FAQ+</Link></p>
+            <p><Link to="/Pricing" className="footer-link">Pricing</Link></p>
         </div>
         <div className='footerC'>
             <h3>Our Services</h3>
             <p>House Cleaning</p>
-            <p>Kitchen Cleaning</p>
+            <p>Commercial/Residental Cleaning</p>
             <p>Floor Cleaning</p>
-            <p>Bathroom Cleaning</p>
-            <p>Office Cleaning</p>
+            <p>Post Construction</p>
+            <p>Air BnB Cleaning</p>
         </div>
         <div className='footerD'>
         <h3>Contact Us</h3>
-        <p>+1 (431) 334-5256</p>
-        <p>aimercleaning@gmail.com</p>
+        <p><a href='tel:+14313345256' >+1 (431) 334-5256</a></p>
+        <p><a href='mailto:aimercleaning@gmail.com'>aimercleaning@gmail.com</a></p>
         </div>
         </div>
-        <div className='footer-last'>
-        <h4>Aimer</h4>
-        <span className='aimer'>
-            <h4>+1 (431) 334-5256</h4>
-            <h4>aimercleaning@gmail.com</h4>
-        </span>
-        </div>
+        {/* <div className='footer-last'>
+        <h4>Aimer</h4> */}
+        {/* <span className='aimer'>
+            <h4>
+              <a href='tel:+14313345256'>+1 (431) 334-5256</a>
+            </h4>
+
+            <h4>
+              <a href='mailto:aimercleaning@gmail.com'>aimercleaning@gmail.com</a>
+            </h4>
+        </span> */}
+        {/* </div> */}
         </div>
       </div>
     </div>
