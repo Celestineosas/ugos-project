@@ -12,7 +12,7 @@ const data = [
     {
         id: '3',
         question: "How do I schedule a cleaning service?",
-        answer: "Scheduling a service is simple! You can: <br> - Call us directly at <a href='tel:431-334-5256'>431-334-5256</a> <br> - Fill out the booking form on our website <br> - Email us at aimercleaning@gmail.com with your preferred date and time. <br> We'll confirm your booking and provide you with a detailed plan of action."
+        answer: "Scheduling a service is simple! You can: <br> - Call us directly at +1(431)-334-5256. <br> - Fill out the booking form on our website. <br> - Email us at aimercleaning@gmail.com with your preferred date and time. <br> We'll confirm your booking and provide you with a detailed plan of action."
     },
     {
         id: '4',
