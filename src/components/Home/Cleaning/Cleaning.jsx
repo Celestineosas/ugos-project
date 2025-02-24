@@ -78,7 +78,7 @@ const Cleaning = () => {
     </div>
     <div className='card black'>
     <div className='card-list'>
-    <h4 className='black-text'>12+ <span>Services<br></br>You can Explore</span></h4>
+    <h4 className='black-text'> Other <span>Services<br></br>You can Explore</span></h4>
     <FaArrowRight onClick={handleServiceNavigation} size='1.8rem' />
     </div> 
     </div>

@@ -46,9 +46,13 @@
     width: 400px;
     margin-bottom: 60px !important;
 }
-.footerA >p ,.footerB >p, .footerC >p, .footerD >p{
+.footerA >p ,.footerB >p, .footerC >p, .footerD >p, .footerD >p>a{
     color: #666666;
    
+    font-size: 13px;
+}
+.footer-link{
+    color: #666666;
     font-size: 13px;
 }
 .footer-cta{

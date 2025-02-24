@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.css'
-import { FaArrowRight } from "react-icons/fa6";
-import { FaRegCommentAlt } from "react-icons/fa";
-import { AiOutlineLike } from "react-icons/ai";
+// import { FaArrowRight } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa";
+// import { AiOutlineLike } from "react-icons/ai";
 
 const Blog = () => {
   return (
@@ -19,8 +19,7 @@ const Blog = () => {
         <div className='blog-text'>
         <p>House Cleaning</p>
         <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
+        <span><FaStar /> 5.0</span>
         </div>
         </div>
         <div className='blog-span'>
@@ -34,8 +33,7 @@ const Blog = () => {
         <div className='blog-text'>
         <p>Office Cleaning</p>
         <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
+        <span><FaStar /> 4.8</span>
         </div>
         </div>
         <div className='blog-span'>
@@ -49,8 +47,8 @@ const Blog = () => {
         <div className='blog-text'>
         <p>House Cleaning</p>
         <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
+        <span><FaStar /> 5.0</span>
+        
         </div>
 
         </div>
@@ -66,8 +64,7 @@ const Blog = () => {
         <div className='blog-text'>
         <p>Office Cleaning</p>
         <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
+        <span><FaStar /> 4.7</span>
         </div>
 
         </div>

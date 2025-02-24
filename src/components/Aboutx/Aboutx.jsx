@@ -4,7 +4,7 @@ import { GiVibratingSmartphone } from "react-icons/gi";
 import { CiSettings } from "react-icons/ci";
 import { GiRingingBell } from "react-icons/gi";
 
-import AboutSlider from './AboutSlider'
+// import AboutSlider from './AboutSlider'
 
 const Aboutx = () => {
   return (
