@@ -3,8 +3,28 @@ import './style.css'
 import { useNavigate } from 'react-router-dom';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineNorthEast } from "react-icons/md";
+import { useMediaQuery } from 'react-responsive';
 // import { FaBars, FaTimes } from 'react-icons/fa';
 
+const ResponsiveServiceButton = ({ handleContactNavigate }) => {
+  const isDesktop = useMediaQuery({ minWidth: 769 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  return (
+    <>
+      {isDesktop && (
+        <div onClick={handleContactNavigate} className="cta2">
+          Book A Service <MdOutlineNorthEast className="northeast" />
+        </div>
+      )}
+      {isMobile && (
+        <div onClick={handleContactNavigate} className="cta2">
+          Book A Service <MdOutlineNorthEast className="northeast" />
+        </div>
+      )}
+    </>
+  );
+};
 const Header = () => {
   const navigate = useNavigate()
   function handleContactNavigate(){
@@ -19,7 +39,7 @@ const Header = () => {
         At Aimer, we offer professional, reliable, and affordable services tailored to your needs - because your time is spent living not scrubbing </p>
         <div className='checkus'>
           <div className='book'>
-            <div onClick={handleContactNavigate} className='cta2'>Book A Service <MdOutlineNorthEast className='northeast' /></div>
+            <ResponsiveServiceButton handleContactNavigate={handleContactNavigate} />
           </div>
           
           <a href="tel:+14313345256" className='wos'>
