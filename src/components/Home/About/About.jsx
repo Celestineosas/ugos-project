@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './style.css'
 import { FaPlus } from "react-icons/fa6";
-import { MdOutlineNorthEast } from "react-icons/md";
 import data from './data';
 import { FaTimes } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
@@ -35,7 +34,7 @@ const About = () => {
     </div>
 
   )
-
+  
   const handleScrell = () => {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 100) {
@@ -66,7 +65,7 @@ const About = () => {
           <p>Discover premium cleaning services tailored to your needs, efficient, reliable, and designed to keep your space immaculate and refreshing.</p>
           <div className='selection'>
             {dataElement}
-            <div onClick={handleContactNavigate} className='about-cta2'>Contact us <MdOutlineNorthEast className='northeast' /> </div>
+            <div onClick={handleContactNavigate} className='about-cta2'>Contact us</div>
           </div>
         </div>
       </div>

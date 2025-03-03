@@ -1,83 +1,53 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './style.css'
-import { FaArrowRight } from "react-icons/fa6";
-import { FaRegCommentAlt } from "react-icons/fa";
-import { AiOutlineLike } from "react-icons/ai";
-
+// import { FaArrowRight } from "react-icons/fa6";
+// import { FaRegCommentAlt } from "react-icons/fa";
+// import { AiOutlineLike } from "react-icons/ai";
+import reviewData from './reviewdata';
+import { FaStar } from "react-icons/fa";
 const Blog = () => {
+    const [scrolling, setScrolling] = useState(false);
+    const handleScrell = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 2500) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+  
+    useEffect(() => {
+      window.addEventListener("scroll", handleScrell)
+      return () => {
+        window.removeEventListener("scroll", handleScrell)
+      }
+    },
+      []);
+    const ReviewElement = reviewData.map(reviewItem =>
+      <div className='blog-card' key={reviewItem.id}>
+    <img className='blog-img' src={reviewItem.img} alt='blog-img'/>
+      <div className='blog-text'>
+      <p>{reviewItem.service}</p>
+      <div className='span-logo'>
+      <span><FaStar  color='gold' />{reviewItem.rating}</span>
+      </div>
+      </div>
+      <div className='blog-span'>
+          <h3>{reviewItem.name}</h3>
+      <p>{reviewItem.comment}</p>
+      </div>
+      </div>
+    )
   return (
     <div className='blog-container'>
-      <div className='blog-content'>
-        <div className='blog-description'>
+      <div className={`blog-content ${scrolling ? "show-left-scroll" : ""}`}>
+        <div className="blog-description">
             <h3>Reviews</h3>
             <h1>Our Latest Reviews</h1>
         </div>
-        <div className='blog-layer'>
-        <div className='blog-card'>
-        <span className='blog-badge'>House Cleaning</span>
-        <img className='blog-img' src='./images/istockphoto-1417833187-612x612.jpg' alt='blog-img'/>
-        <div className='blog-text'>
-        <p>House Cleaning</p>
-        <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
-        </div>
-        </div>
-        <div className='blog-span'>
-            <h3>ANES RAZA</h3>
-        <p>Fantastic service! The cleaning was thorough, timely, and professional. Our house looks spotless and fresh!</p>
-        </div>
-        </div>
-        <div className='blog-card'>
-        <span className='blog-badge'>Office Cleaning</span>
-        <img className='blog-img' src='./images/istockphoto-1358089804-612x612.jpg' alt='blog-badge'/>
-        <div className='blog-text'>
-        <p>Office Cleaning</p>
-        <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
-        </div>
-        </div>
-        <div className='blog-span'>
-        <h3>Proud Trucking Office</h3>
-        <p>Reliable cleaners, great attention to detail, office always fresh and tidy. Very satisfied!</p>
-        </div>
-        </div>
-        <div className='blog-card'>
-        <span className='blog-badge'>House Cleaning</span>
-        <img className='blog-img' src='./images/istockphoto-1332613500-612x612.jpg' alt='blog-badge'/>
-        <div className='blog-text'>
-        <p>House Cleaning</p>
-        <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
-        </div>
-
-        </div>
-        <div className='blog-span'>
-            <h3>JOSEPH FLORENTINO</h3>
-        <p>Exceptional house cleaning! Trustworthy, thorough, and leaves every room sparkling. Highly recommend!.</p>
-        </div>
-        
-        </div>
-        <div className='blog-card'>
-        <span className='blog-badge'>Office Cleaning</span>
-        <img className='blog-img' src='.\images\istockphoto-1393767097-612x612.jpg' alt='blog-badge'/>
-        <div className='blog-text'>
-        <p>Office Cleaning</p>
-        <div className='span-logo'>
-        <span><FaRegCommentAlt /> 23</span>
-        <span><AiOutlineLike /> 123</span>
-        </div>
-
-        </div>
-        <div className='blog-span'>
-            <h3>ADRIAN TANG</h3>
-        <p>Consistent, efficient office cleaning. Always on time and leaves the workspace spotless. Highly impressed!.</p>
-        </div>
-        
-        </div>
-        </div>
+        <di className='blog-layer'>
+          {ReviewElement}
+        </di>
       </div>
     </div>
   )

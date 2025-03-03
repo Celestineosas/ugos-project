@@ -72,7 +72,7 @@
 
 @media screen and (width : 1024px){ 
    .aboutx-container{
-    width: 1200px;
+    width: 924px;
    }
     .aboutx-content{
         width: 100%;
@@ -143,9 +143,15 @@
     }
 }
 
+@media(width: 412px){
+.aboutx-description >p{
+    margin-left: 15px;
+ 
+}
+}
 @media(max-width: 420px){
 .aboutx-container{
-    padding: 10px;
+    padding: 8px;
 }
 .aboutx-content{
     margin-top: 100px;
@@ -153,13 +159,43 @@
 .aboutx-description{
     width: 380px;
 }
+.aboutx-description >p{
+    margin-left: 10px;
+}
+
 .aboutx-description> h1{
     white-space: nowrap;
     font-size: 34px;
 }
 }
 
+@media (max-width: 390px) {
+    .aboutx-container {
+      width: 360px;
+      padding: 30px 10px ;
+      
+    }
+    .aboutx-content{
+      width: 360px;
 
+    }
+}
+@media (max-width: 375px) {
+    .aboutx-container {
+      width: 355px !important;
+      padding: 50px 10px;
+     
+    }
+    .aboutx-content{
+      width: 350px;
+    }
+    .aboutx-description > p{
+        width: 340px;
+    }
+    .aboutx-card{
+        width: 340px;
+    }
+}
 @media(max-width: 360px){
     .aboutx-content{
         width: 330px;
@@ -173,5 +209,8 @@
     }
     .logo-con{
         padding: 0px;
+    }
+    .aboutx-description > h1{
+        margin-right: 70px !important;
     }
 }

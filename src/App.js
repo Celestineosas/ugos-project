@@ -11,6 +11,9 @@ import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
 import Contact from './components/Contact/Contact';
 import Pricing from './components/Pricing/Pricing'
+import FAQ from './components/FAQ/Faq';
+import Review from './Review/Review';
+
 // import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 // import About from './components/About/About';
 // import Header from './components/Header/Header';
@@ -31,6 +34,8 @@ function App() {
         <Route path='/Service' element={<Servicex />}/>
         <Route path='/Contact' element={<Contact />}/>
         <Route path='/Pricing' element={<Pricing />}/>
+        <Route path='/FAQ' element={<FAQ />}/>
+        <Route path="/review" element={<Review />} />
       </Routes>
     <ScrollToTopButton />
      <Footer />

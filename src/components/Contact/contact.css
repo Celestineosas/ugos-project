@@ -120,7 +120,7 @@ textarea:focus{
 
    @media screen and (width : 1024px){ 
     .contact-container{
-     width: 1200px;
+     width: 924px;
     }
  
  }
@@ -196,13 +196,27 @@ textarea:focus{
         width: 350px;
     }
 }
+@media (max-width: 375px) {
+    .contact-container{
+      width: 355px;
+      padding: 50px 10px;
+     
+    }
+    .contact-content{
+      width: 330px;
+    }
+    .contact-card{
+        width: 290px;
+    }
 
+}
 @media(max-width: 360px){
     .contact-container{
-        width: 300px;
+        width: 370px;
     }
     .contact-container > h1{
         margin-top: 100px;
+       
     }
     .contact-content{
         width: 300px;

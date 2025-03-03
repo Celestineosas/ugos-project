@@ -46,7 +46,7 @@
     width: 400px;
     margin-bottom: 60px !important;
 }
-.footerA >p ,.footerB >p, .footerC >p, .footerD >p{
+.footerA >p ,.footerB >p, .footerC >p, .footerD >p, .footerD >p>a{
     color: #666666;
    
     font-size: 13px;
@@ -54,6 +54,13 @@
 .footer-cta{
     display: flex;
     gap: 15px;
+}
+.footer-cta > a {
+    color: white;
+}
+.footer-link{
+    color: #666666;
+    font-size: 13px;
 }
 .footer-last{
     margin-top: 30px;
@@ -95,7 +102,7 @@
 
 @media screen and (width: 1024px){
     .footer-container{
-        width: 1200px;
+        width: 924px !important;
         padding: 50px;
     }
     .footer-input > button{
@@ -213,6 +220,6 @@
 
 @media(max-width: 360px){
     .footer-container{
-        width: 380px;
+        width: 370px;
     }
 }

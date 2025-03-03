@@ -23,7 +23,6 @@ const Servicex = () => {
         </div>
         <div  className='servicex-bottom'>
         <div className='bottom-description'>
-        <h1 className='belong' >WE HAVE PERFORMED<br></br>OVER <span className='green-span'>1000+ CLEANINGS</span></h1>
         <div className='bottom-card'>
             <div className='bottom-grid'>
             <img src='./images/istockphoto-1393767097-612x612.jpg'/>
