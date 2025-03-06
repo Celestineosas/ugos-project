@@ -31,8 +31,8 @@ const reviewdata = [
       name: "ADRIAN TANG",
       service: "Office Cleaning",
       comment: 
-        "Fantastic service! The cleaning was thorough, timely, and professional. Our house looks spotless and fresh!",
-        img : "./images/istockphoto-1332613500-612x612.jpg",
+        "Fantastic service! The cleaning was thorough, timely, and professional.",
+        img : "./images/istockphoto-1393767097-612x612.jpg",
         rating : "4.7",
     },
     {
@@ -41,8 +41,17 @@ const reviewdata = [
       service: "Junk Removal",
       comment: 
         "Nice and friendly staff. We had junk in our basement and needed help clearing it out and they did an amazing job",
-        img : "./images/istockphoto-1417833187-612x612.jpg",
+        img : "./images/IMG-20250305-WA0046.jpg",
         rating : "5.0",
+    },
+    {
+      id  : '6',
+      name: "KELLY",
+      service: "House Cleaning",
+      comment: 
+        "Great clean for a good price. I would definitely book again. My only negative was the master bathroom wasn’t swept. Otherwise great",
+        img : "./images/IMG-20250305-WA0048.jpg",
+        rating : "4.5",
     },
 
 

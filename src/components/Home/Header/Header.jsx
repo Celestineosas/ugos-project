@@ -50,7 +50,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
         <img src='./images/cleaning service-cuate (1).png' className='content-img' alt='img' />
       </div>
     </div>
