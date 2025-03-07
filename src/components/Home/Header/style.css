@@ -119,6 +119,7 @@ nav {
   font-size: 45px;
   font-weight: bolder;
   line-height: 1.1;
+  white-space: nowrap;
 }
 .text > span {
   color: #137335;
@@ -231,13 +232,7 @@ nav {
         width: 1024px;
     }
 } */
-@media (width: 1280px) {
 
-  nav{
-   width: 1080px;
-  }
-  
-}
 @media (max-width: 1235px) {
   .header {
     padding: 50px;
@@ -395,9 +390,9 @@ nav {
     display: none;
   }
   nav {
-    width: 100vh;
+    width: 120vw;
     display: flex;
-    gap: 50px;
+    gap: 100px;
     padding-left: 30px;
   }
   .nav-menu {

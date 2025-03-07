@@ -49,7 +49,7 @@ const reviewdata = [
       name: "KELLY",
       service: "House Cleaning",
       comment: 
-        "Great clean for a good price. I would definitely book again. My only negative was the master bathroom wasn’t swept. Otherwise great",
+        "Great clean for a good price. I would definitely book again.",
         img : "./images/IMG-20250305-WA0048.jpg",
         rating : "4.5",
     },

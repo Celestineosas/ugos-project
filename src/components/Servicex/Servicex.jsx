@@ -31,7 +31,7 @@ const Servicex = () => {
                 <div className='bottom-span'> 
                     <span>Basic Cleaning (per hour) --  $30-$40</span>
                     <span>Deep Cleaning (per hour) --  $50-$65</span>
-                    <span>Monthly Packages (per hour) --  $300-$800</span>
+                    <span>Monthly Packages --  $300-$800</span>
                     <div onClick={handleContactNavigate} className='about-cta2'>Book Now</div>
                 </div>
             </div>  
@@ -44,8 +44,8 @@ const Servicex = () => {
                     <span>General Cleaning (per hour) --  $30-$40</span>
                     <span>Deep Cleaning (per hour) --  $50-$65</span>
                     <span>Window Cleaning (per hour) --  $30-$45</span>
-                    <span>Full Service(Monthly) (per hour) --  $500-$1000</span>
-                    <span>Full Service(BiWeekly) (per hour) --  $260-$360</span>
+                    <span>Full Service(Monthly)  --  $500-$1000</span>
+                    <span>Full Service(BiWeekly)  --  $260-$360</span>
                     <div onClick={handleContactNavigate} className='about-cta2'>Book Now</div>
                 </div>
             </div>  
@@ -58,7 +58,7 @@ const Servicex = () => {
                 <span>Basic Cleaning (per hour) --  $40-$60</span>
                     <span>Deep Cleaning (per hour) --  $60-$90</span>
                     <span>Window Cleaning (per hour) --  $30-$40</span>
-                    <span>Full Service Package (per hour) --  $300-$500</span>
+                    <span>Full Service Package  --  $300-$500</span>
                     <div onClick={handleContactNavigate} className='about-cta2'>Book Now</div>
                 </div>
             </div>  

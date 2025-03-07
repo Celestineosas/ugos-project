@@ -37,7 +37,7 @@ const Header = () => {
     <div className='header'>
       <div className='content'>
         <div className='description'>
-          <h1 className='text'><span>Professional</span> Cleaning <br></br>Service For your home</h1>
+          <h1 className='text'><span>Professional</span> Cleaning <br></br>Service Be it your home</h1>
           <p>Life's too short to spend it cleaning. Let us handle the mess, so you can enjoy what matters most.
             At Aimer, we offer professional, reliable, and affordable services tailored to your needs - because your time is spent living not scrubbing </p>
           <div className='checkus'>

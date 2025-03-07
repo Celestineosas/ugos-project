@@ -13,7 +13,7 @@ const Aboutx = () => {
         <div className='aboutx-description'>
           <h1>About Us</h1>
           <p>Welcome to AIMER CLEANING SERVICES, where cleanliness meets passion! We are a family-owned cleaning company founded by two individuals who have a genuine love for cleaning. Our passion for making spaces shine is what led us to create this company, and it’s at the heart of everything we do.
-            At AIMER CLEANING SERVICES, we believe that a clean environment not only looks good but also promotes well-being and productivity. Whether it’s your home, office, or company space, we are dedicated to delivering top-notch cleaning services that leave every corner sparkling.</p>
+            At AIMER CLEANING SERVICES, we believe that a clean environment not only looks good but also promotes well-being and productivity. Be it your home, office, or company space, we are dedicated to delivering top-notch cleaning services that leave every corner sparkling.</p>
         </div>
         <div className='aboutx-span'>
           <div className='aboutx-card'>

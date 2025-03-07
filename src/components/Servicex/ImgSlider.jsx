@@ -40,7 +40,7 @@ return(
 <div className='carousel-content'>
 
 <img src='./images/istockphoto-1026448826-612x612.jpg' />
-<h2>Air BnB cleaning</h2>
+<h2>Air bnb cleaning</h2>
 
 </div>
 <div className='carousel-content'>
