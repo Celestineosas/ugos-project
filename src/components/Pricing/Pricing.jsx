@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Pricing = () => {
     const navigate = useNavigate();
     function handleContactNavigate(){
-      navigate('/Contact')
+      navigate('/Book')
     }
     return (
 

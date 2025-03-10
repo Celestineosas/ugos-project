@@ -57,12 +57,12 @@ const About = () => {
         <div className={`layer ${scrolling ? "show-left-scroll" : ""}`}>
           <button className='about-cta'>About Us</button>
           <h1>We Are Providing The Best<br></br> Cleaning Services</h1>
-          <p>Welcome to AIMER CLEANING SERVICES, where cleanliness meets passion! We are a family-owned cleaning company founded by two individuals who have a genuine love for cleaning. Our passion for making spaces shine is what led us to create this company, and it’s at the heart of everything we do.
+          <p>Welcome to AIMER CLEANING SERVICES, where cleanliness meets passion! We are a family-owned cleaning company founded by two individuals who have a genuine love for cleaning. Our passion for making spaces shine led us to establish the company. Cleanliness is at the heart of everything we do.
            <br></br>
             At AIMER CLEANING SERVICES, we believe that a clean environment not only looks good but also promotes well-being and productivity. Whether it’s your home, office, or company space, we are dedicated to delivering top-notch cleaning services that leave every corner sparkling.</p>
         </div>
         <div className={`about-description ${scrolling ? "show-left-scroll" : ""}`}>
-          <p>Discover premium cleaning services tailored to your needs, efficient, reliable, and designed to keep your space immaculate and refreshing.</p>
+          <p>Discover premium, efficient and reliable cleaning services tailored to meet your needs and designed to keep your space immaculate and refreshing.</p>
           <div className='selection'>
             {dataElement}
             <div onClick={handleContactNavigate} className='about-cta2'>Contact us</div>
