@@ -13,6 +13,8 @@ import Contact from './components/Contact/Contact';
 import Pricing from './components/Pricing/Pricing'
 import FAQ from './components/FAQ/Faq';
 import Review from './Review/Review';
+import Book from './components/Book/Book';
+
 
 // import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 // import About from './components/About/About';
@@ -36,6 +38,7 @@ function App() {
         <Route path='/Pricing' element={<Pricing />}/>
         <Route path='/FAQ' element={<FAQ />}/>
         <Route path="/review" element={<Review />} />
+        <Route path="/book" element={<Book />} />
       </Routes>
     <ScrollToTopButton />
      <Footer />
