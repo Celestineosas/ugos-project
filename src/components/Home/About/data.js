@@ -3,19 +3,19 @@ const data = [
       id  : '1',
       question: "Office Cleaning Experts",
       answer:
-        "Trusted professionals ensuring a pristine workspace, boosting productivity with every clean. Satisfaction guaranteed!",
+        "Trusted professionals ensuring a pristine workspace, boosting productivity with every clean. Satisfaction guaranteed.",
     },
     {
       id  : '2',
       question: "Eco-Friendly Cleaning",
       answer:
-        "Green cleaning solutions that are safe for your space and the planet. Sparkling results!",
+        "Green cleaning solutions that are safe for your space and the planet. Great results.",
     },
     {
       id  : '3',
       question: "Deep Cleaning Specialists",
       answer:
-        "Transforming spaces with meticulous deep cleaning, leaving no corner untouched. Perfectly spotless every time!",
+        "Transforming spaces with meticulous deep cleaning, leaving no corner untouched. Perfectly transformed every time."
     },
 
   ];

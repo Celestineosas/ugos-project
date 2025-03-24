@@ -37,7 +37,7 @@ span > a{
 .contact-card{
     width: 300px;
     border-radius: 10px;
-    background-color:#137335 ;
+    background-color:#4f6f1d ;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -56,8 +56,15 @@ span > a{
     white-space: nowrap;
     width: 100%;
 }
+.contact-info> h2{
+    text-align: left;
+}
+.contact-info{
+    text-align: left;
+}
 .contact-info > p{
     font-size: 15px;
+    text-align: left;
 }
 .form-container {
     padding: 20px;
@@ -108,7 +115,7 @@ textarea:focus{
    
 }
 .fform-btn{ 
-    background-color: #137335;
+    background-color: #4f6f1d;
     color: white;
     padding: 12px;
     border-radius: 4px;

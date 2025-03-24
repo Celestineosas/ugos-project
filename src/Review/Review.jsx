@@ -3,12 +3,22 @@ import './Review.css';
 import ReviewForm from './ReviewForm';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 const Review = () => {
     return (
-        <div className='review-container'>
-            <h1>Leave a Review</h1>
-            <p>We value your feedback and strive to provide the best service possible. Please leave a review and let us know how we did!</p>
+        <section className='padding-x sm:py-36 py-24 flex justify-between items-center text-center gap-10 w-full max-container flex-col bg-[#b8d576]'>
+            <div className='flex flex-1 flex-col'>
+                <h2 className="xl:mt-10 mt-5 font-palanquin text-[#2e3d12] capitalize lg:max-w-lg text-4xl max-sm:text-3.5xl font-bold">
+                    Leave a Review
+                    <p className=" mt-4 text-sm font-palanquin leading-normal text-white lg:max-w-lg">
+                        We value your feedback and strive to provide the best possible. Please leave a review and let us know how we did.</p>
+                </h2>
+            </div>
+
             <div className='review-content'>
                 <div className='review-card'>
                     <span className='review-info'>
@@ -25,10 +35,24 @@ const Review = () => {
                             <p>aimercleaning@gmail.com</p>
                         </a>
                     </span>
+                    <div className="flex flex-1 gap-5">
+                        <a className='text-white text-2xl' href='https://www.facebook.com/share/1A3piEU3uN/?mibextid=wwXIfr'>
+                            <FiFacebook />
+                        </a>
+                        <a className='text-white text-2xl' href='https://www.instagram.com/aimercleaning?igsh=ZGc2MTdnMWV0bG5p&utm_source=qr'>
+                            <FaInstagram />
+                        </a>
+                        <a className='text-white text-2xl' href='https://www.tiktok.com/@aimercleaning?_t=ZM-8u7JiSVUf1a&_r=1'>
+                            <FaTiktok />
+                        </a>
+                        <a className='text-white text-2xl' href='https://youtube.com/@aimercleaning?si=gWgBOoiNFb6WodA-'>
+                            <FaYoutube />
+                        </a>
+                    </div>
                 </div>
                 <ReviewForm />
             </div>
-        </div>
+        </section>
     );
 }
 

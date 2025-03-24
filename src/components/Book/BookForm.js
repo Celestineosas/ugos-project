@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './book.css';
+import { FaCircleCheck } from "react-icons/fa6";
 
 const BookForm = () => {
     const form = useRef();
@@ -39,8 +40,9 @@ const BookForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
+            console.log('Form Data:', formData); // Debugging
             emailjs
-                .sendForm('service_y4zxynk', 'template_0mktefc', form.current, {
+                .sendForm('service_y4zxynk', 'template_9u2byg9', form.current, {
                     publicKey: 'n86KGuoT1hi5VG0r9',
                 })
                 .then(
@@ -57,6 +59,7 @@ const BookForm = () => {
                         setMessage('Booking request sent successfully!');
                     },
                     (error) => {
+                        console.error('EmailJS Error:', error); // Debugging
                         setMessage('Failed to send booking request. Please try again.');
                     }
                 )
@@ -70,35 +73,34 @@ const BookForm = () => {
 
     return (
         <form ref={form} onSubmit={handleSubmit} className='book-form'>
-            <h2>Book Now</h2>
-            {message && <p>{message}</p>}
-            {errors.firstName && <p className='error'>{errors.firstName}</p>}
+            <h2 className='font-semibold font-montserrat text-lg'>Book Now</h2>
+            {errors.firstname && <p className='error'>{errors.firstname}</p>}
             <div>
-                <label htmlFor='firstName'>First Name:</label>
+                <label className="text-left font-bold text-xl font-palanquin" htmlFor='firstname'>First Name:</label>
                 <input
                     type='text'
-                    id='firstName'
-                    name='firstName'
-                    value={formData.firstName}
+                    id='firstname'
+                    name='firstname'
+                    value={formData.firstname}
                     onChange={handleChange}
                     required
                 />
             </div>
-            {errors.lastName && <p className='error'>{errors.lastName}</p>}
+            {errors.lastname && <p className='error'>{errors.lastname}</p>}
             <div>
-                <label htmlFor='lastName'>Last Name:</label>
+                <label className="text-left font-bold text-xl font-palanquin" htmlFor='lastname'>Last Name:</label>
                 <input
                     type='text'
-                    id='lastName'
-                    name='lastName'
-                    value={formData.lastName}
+                    id='lastname'
+                    name='lastname'
+                    value={formData.lastname}
                     onChange={handleChange}
                     required
                 />
             </div>
             {errors.email && <p className='error'>{errors.email}</p>}
             <div>
-                <label htmlFor='email'>Email:</label>
+                <label className="text-left font-bold text-xl font-palanquin" htmlFor='email'>Email:</label>
                 <input
                     type='email'
                     id='email'
@@ -110,24 +112,25 @@ const BookForm = () => {
             </div>
             {errors.serviceType && <p className='error'>{errors.serviceType}</p>}
             <div>
-                <label htmlFor='serviceType'>Type of Service:</label>
+                <label className="text-left font-bold text-xl font-palanquin" htmlFor='serviceType'>Type of Service:</label>
                 <select
                     id='serviceType'
                     name='serviceType'
                     value={formData.serviceType}
                     onChange={handleChange}
                     required
-                >
+                > 
                     <option value=''>Select a service</option>
                     <option value='office-cleaning'>Office Cleaning</option>
                     <option value='residential-airbnb-cleaning'>Residential/Air bnb Cleaning</option>
                     <option value='post-construction'>Post Construction</option>
                     <option value='commercial-cleaning'>Commercial Cleaning</option>
+                    <option value='others'>Others</option>
                 </select>
             </div>
             {errors.phoneNumber && <p className='error'>{errors.phoneNumber}</p>}
             <div>
-                <label htmlFor='phoneNumber'>Phone Number:</label>
+                <label className="text-left font-bold text-xl font-palanquin" htmlFor='phoneNumber'>Phone Number:</label>
                 <input
                     type='tel'
                     id='phoneNumber'
@@ -139,7 +142,7 @@ const BookForm = () => {
             </div>
             {errors.postalCode && <p className='error'>{errors.postalCode}</p>}
             <div>
-                <label htmlFor='postalCode'>Postal Code (Canada only):</label>
+                <label className="text-left font-bold text-xl font-palanquin" htmlFor='postalCode'>Postal Code (Canada only):</label>
                 <input
                     type='text'
                     id='postalCode'
@@ -151,7 +154,7 @@ const BookForm = () => {
                 />
             </div>
             <div>
-                <label htmlFor='details'>Additional Details:</label>
+                <label className="text-left font-bold text-xl font-palanquin" htmlFor='details'>Additional Details:</label>
                 <textarea
                     id='details'
                     name='details'
@@ -160,7 +163,13 @@ const BookForm = () => {
                     placeholder='Provide more details about your schedule...'
                 />
             </div>
-            <button type='submit'>Submit</button>
+            <button type="submit" value="Send" className="fform-btn">
+          Send Message
+        </button>
+            {message && <div className='message-pop'> 
+                <FaCircleCheck className='message-logo mt-3' />
+                 <p>{message}</p>
+            </div>}
         </form>
     );
 };

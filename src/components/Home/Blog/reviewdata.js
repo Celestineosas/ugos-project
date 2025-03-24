@@ -26,15 +26,7 @@ const reviewdata = [
         img : "./images/IMG-20250302-WA0011(1).jpg",
         rating : "5.0",
     },
-    {
-      id  : '4',
-      name: "ADRIAN TANG",
-      service: "Office Cleaning",
-      comment: 
-        "Fantastic service! The cleaning was thorough, timely, and professional.",
-        img : "./images/istockphoto-1393767097-612x612.jpg",
-        rating : "4.7",
-    },
+    
     {
       id  : '5',
       name: "ELENA CAMPOS",

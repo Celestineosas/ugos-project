@@ -1,114 +1,65 @@
 import React from 'react'
-import './style.css'
-import ImgSlider from './ImgSlider'
-// import { CiClock1 } from "react-icons/ci";
-// import { useNavigate } from 'react-router-dom';
-// import { LuCircleDollarSign } from "react-icons/lu";
-// import { FaArrowsRotate } from "react-icons/fa6";
 
 
 const Servicex = () => {
-    
   return (
-    <div className='servicex-container'>
-      <div className='servicex-content'>
-        <div  className='servicex-top'>
-        <div className='servicex-description'>
-        <h1>OUR CLEANING<br></br> SERVICES</h1>
-        </div>
-        <ImgSlider />
-        </div>
-        <div  className='servicex-bottom'>
-        <div className='bottom-description'>
-        <div className='bottom-card'>
-            <div className='bottom-grid'>
-            <img src='./images/istockphoto-1393767097-612x612.jpg'/>
-            <div className='bottom-text'>
-                <h2>OFFICE CLEANING</h2>
-                <div className='bottom-span'> 
-                    {/* <span>Basic Cleaning (per hour) --  $30-$40</span>
-                    <span>Deep Cleaning (per hour) --  $50-$65</span>
-                    <span>Monthly Packages --  $300-$800</span>
-                    <div onClick={handleContactNavigate} className='about-cta2'>Book Now</div> */}
-                    <ul>
-                      <li>Vacuum Floors</li>
-                      <li>Wiping / Dusting Desks / Tables, Screens, Printers</li>
-                      <li>Thorough Washroom Cleaning</li>
-                      <li>Mop / Wash Floors</li>
-                    </ul>
-                </div>
-            </div>  
-            </div>
-            <div className='bottom-grid'>
-            <img src='./images/istockphoto-2161323689-612x612.jpg'/>
-            <div className='bottom-text'>
-                <h2>RESIDENTIAL/Air bnb CLEANING</h2>
-                <div className='bottom-span'>
-                    {/* <span>General Cleaning (per hour) --  $30-$40</span>
-                    <span>Deep Cleaning (per hour) --  $50-$65</span>
-                    <span>Window Cleaning (per hour) --  $30-$45</span>
-                    <span>Full Service(Monthly)  --  $500-$1000</span>
-                    <span>Full Service(BiWeekly)  --  $260-$360</span>
-                    <div onClick={handleContactNavigate} className='about-cta2'>Book Now</div> */}
-                    <ul>
-                      <li>Vacuum Floors</li>
-                      <li>Oven And Microwave</li>
-                      <li>Thorough Bathroom Cleaning</li>
-                      <li>Refrigerator Cleaning</li>
-                      <li>Upholestry</li>
-                      <li>Spot Clean Walls and Doors</li>
-                      <li>Junk / Garbage Remove</li>
-                      <li>Kitchen Cleaning</li>
-                      <li>Wiping/ Dusting Cupboards And Baseboard From Exterior And Interior</li>
-                      <li>Interior Windows</li>
-                      <li>Carpet Shampooing</li>
-                      <li>Garage / Patio Sweeping </li>
-                    </ul>
-                </div>
-            </div>  
-            </div>
-            
-            <div className='bottom-grid'>
-            <img src=''/>
-            <div className='bottom-text'>
-                <h2>COMMERCIAL CLEANING</h2>
-                <div className='bottom-span'>
-                    <ul>
-                      <li>Vacuum Floors</li>
-                      <li>Window Cleaning</li>
-                      <li>Dusting / Wiping surfaces</li>
-                      <li>Sweep / Mop Floors</li>
-                      <li>Washroom Cleaning</li>
-                    </ul>
-                </div>
-            </div>  
-            </div>
+    <section className='padding flex justify-center items-center flex-col gap-10 w-full max-container'>
+      <div className='flex flex-1 flex-col mt-16'>
 
-            <div className='bottom-grid'>
-            <img src='./images/istockphoto-1408477638-612x612.jpg'/>
-            <div className='bottom-text'>
-                <h2>POST CONSTRUCTION</h2>
-                <div className='bottom-span'> 
-                {/* <span>Basic Cleaning (per hour) --  $40-$60</span>
-                    <span>Deep Cleaning (per hour) --  $60-$90</span>
-                    <span>Window Cleaning (per hour) --  $30-$40</span>
-                    <span>Full Service Package  --  $300-$500</span>
-                    <div onClick={handleContactNavigate} className='about-cta2'>Book Now</div> */}
-                    <ul>
-                      <li>Debris Removed</li>
-                      <li>Window Washing</li>
-                      <li>Surface Cleaning</li>
-                      <li>Floor Cleaning</li>
-                    </ul>
-                </div>
-            </div>  
-            </div>
-
+        <h2 className="xl:mt-10 mt-5 font-palanquin text-[#2e3d12] text-4xl max-sm:text-3.5xl font-bold">
+          OUR CLEANING SERVICES
+        </h2>
+      </div>
+      <div className='grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 mt-3 gap-14'>
+        <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
+          <img className="w-full h-[250px] object-cover" src='./images/istockphoto-1393767097-612x612.jpg' alt='blog-img' />
+          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">OFFICE CLEANING</h3>
+          <ul className='mt-5 text-[#3a4e1c]'>
+            <li>Vacuum Sweep Floors</li>
+            <li>Tables, Screens, Printers Cleaning</li>
+            <li>Washroom cleaning and more</li>
+          </ul>
         </div>
+        <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
+          <img className="w-full h-[250px] object-cover" src='./images/istockphoto-2161323689-612x612.jpg' alt='blog-img' />
+          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">RESIDENTIAL/Air bnb CLEANING</h3>
+          <ul className='mt-5 text-[#3a4e1c]'>
+            <li>Vacuum / Sweep Floors</li>
+            <li>Oven And Microwave Cleaning</li>
+            <li>Refrigerator Cleaning</li>
+            <li>Upholestry</li>
+            <li>Walls and Doors Cleaning</li>
+            <li>Junk / Garbage Removal</li>
+            <li>Cupboard / Baseboard Cleaning </li>
+            <li>Interior window cleaning</li>
+            <li>Carpet Shampoo and more</li>
+          </ul>
         </div>
+        <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
+          <img className="w-full h-[250px] object-cover" src='./images/istockphoto-1316473356-612x612.jpg' alt='blog-img' />
+          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">COMMERCIAL CLEANING</h3>
+          <ul className='mt-5 text-[#3a4e1c]'>
+            <li>Vacuum Floors</li>
+            <li>Floor wash</li>
+            <li>Surface Cleaning</li>
+            <li>Refrigerator Cleaning</li>
+            <li>Window cleaning and more</li>
+          </ul>
+        </div>
+        <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
+          <img className="w-full h-[250px] object-cover" src='./images/istockphoto-1408477638-612x612.jpg' alt='blog-img' />
+          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">POST CONSTRUCTION</h3>
+          <ul className='mt-5 text-[#3a4e1c]'>
+            <li>Debris Removal</li>
+            <li>Window Washing</li>
+            <li>Surface Cleaning</li>
+            <li>Floor Cleaning</li>
+            <li>Hallway Cleaning and more</li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
+
   )
 }
 

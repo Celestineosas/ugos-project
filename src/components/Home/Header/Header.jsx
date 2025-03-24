@@ -1,29 +1,9 @@
-import React, { useRef } from 'react'
-import './style.css'
+import React  from 'react'
+import Button from '../../../reusables/Button'
+
 import { useNavigate } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
+
 import { FaPhoneAlt } from "react-icons/fa";
-
-
-const ResponsiveServiceButton = ({ handleContactNavigate }) => {
-  const isDesktop = useMediaQuery({ minWidth: 769 });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
-  return (
-    <>
-      {isDesktop && (
-        <div onClick={handleContactNavigate} className="cta2">
-          Book A Service
-        </div>
-      )}
-      {isMobile && (
-        <div onClick={handleContactNavigate} className="cta2">
-          Book A Service
-        </div>
-      )}
-    </>
-  );
-};
 
 
 const Header = () => {
@@ -34,25 +14,30 @@ const Header = () => {
   }
 
   return (
-    <div className='header'>
-      <div className='content'>
-        <div className='description'>
-          <h1 className='text'><span>Professional</span> Cleaning <br></br>Service Be it your home</h1>
-          <p>Life's too short to spend it cleaning. Let us handle the mess, so you can enjoy what matters most.
-            At Aimer, we offer professional, reliable, and affordable services tailored to your needs - because your time is spent living not scrubbing.</p>
-          <div className='checkus'>
-            {/* <Link to="/Contact" className="cta2">Book A Service</Link> */}
-            {/* <div onClick={handleContactNavigate} className='cta2'>Book A Service </div> */}
-            <ResponsiveServiceButton handleContactNavigate={handleContactNavigate} />
-            <div className='wos'>
-              <FaPhoneAlt className='play' />
-              <a href='tel:+14313345256'><p >+1 (431) 334-5256</p></a>
-            </div>
+    <section className='padding flex justify-between items-center max-lg:flex-col gap-10 w-full max-container bg-[#b8d576]'>
+      <div className='flex flex-1 flex-col'>
+        <h2 className="xl:mt-10 mt-16 font-palanquin text-[#2e3d12] capitalize lg:max-w-lg text-4xl max-sm:text-3.5xl font-bold">
+          Professional
+          <span className="text-[#2e5f0c]"> Cleaning Service</span>
+        
+        </h2>
+        <p className=" mt-4 info-text lg:max-w-lg">Life's too short to spend it cleaning. Let us handle the mess, so you can enjoy what matters most. At Aimer, we offer professional, reliable, and affordable services tailored to your needs - because your time is spent living not scrubbing.</p>
+
+        <div className='mt-11 flex gap-5'>
+          <div onClick={handleContactNavigate}>
+          <Button label="Book Us" text="text-white"/>
+          </div>
+          <div className='flex gap-6 mt-2'>
+            <FaPhoneAlt className='text-[30px] '/>
+            <a href='tel:+14313345256'><p >+1 (431) 334-5256</p></a>
           </div>
         </div>
-        <img src='./images/cleaning service-cuate (1).png' className='content-img' alt='img' />
       </div>
-    </div>
+      <div className='flex flex-1 justify-center items-center'>
+        <img src='./images/header-img.png' alt='backgrondImg' width={570} height={520} className='pointer-events-none object-contain lg:mt-0 -mt-36 max-sm:-mt-24'/>
+      </div>
+    </section>
+    
   )
 }
 

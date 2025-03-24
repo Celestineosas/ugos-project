@@ -2,7 +2,7 @@ const data = [
     {
         id: '1',
         question: "What services do you offer?",
-        answer: "We provide a wide range of cleaning services, including: <br> - Residential Cleaning: Regular cleaning, deep cleaning, move-in/out cleaning, post-construction cleaning. <br> - Commercial Cleaning: Office cleaning, retail store cleaning, industrial cleaning, and more. <br> - Specialty Cleaning: Carpet cleaning, window cleaning, junk cleaning, and more. <br> If you don't see a service you need, feel free to reach out for custom cleaning requests."
+        answer: "We provide a wide range of cleaning services, including:- Residential Cleaning: Regular cleaning, deep cleaning, move-in/out cleaning, post-construction cleaning.- Commercial Cleaning: Office cleaning, retail store cleaning, industrial cleaning, and more.- Specialty Cleaning: Carpet cleaning, window cleaning, junk cleaning, and more.If you don't see a service you need, feel free to reach out for custom cleaning requests."
     },
     {
         id: '2',
@@ -12,7 +12,7 @@ const data = [
     {
         id: '3',
         question: "How do I schedule a cleaning service?",
-        answer: "- Fill out the booking form on our website <br> - Contact us with your preferred date and time. <br> We'll confirm your booking and provide you with a detailed plan of action."
+        answer: "- Fill out the booking form on our website- Contact us with your preferred date and time. We'll confirm your booking and provide you with a detailed plan of action."
     },
     {
         id: '4',
@@ -22,12 +22,12 @@ const data = [
     {
         id: '5',
         question: "How long will the cleaning take?",
-        answer: "The duration of the cleaning depends on the size of the property and the type of service. Generally: <br> - Standard residential cleaning: 1-3 hours <br> - Deep cleaning: 3-6 hours <br> - Commercial cleaning: varies based on the size of the business <br> We can provide you with an estimated time frame when you schedule your service."
+        answer: "The duration of the cleaning depends on the size of the property and the type of service. Generally: - Standard residential cleaning: 1-3 hours - Deep cleaning: 3-6 hours - Commercial cleaning: varies based on the size of the business We can provide you with an estimated time frame when you schedule your service."
     },
     {
         id: '6',
         question: "What should I do before the cleaning team arrives?",
-        answer: "To ensure a smooth process, we recommend: <br> - Picking up any personal items or valuables <br> - Letting us know of any specific cleaning concerns or areas that need special attention <br> - Providing access instructions if you won't be home <br> Other than that, just relax and let us handle the rest!"
+        answer: "To ensure a smooth process, we recommend: - Picking up any personal items or valuables - Letting us know of any specific cleaning concerns or areas that need special attention - Providing access instructions if you won't be home Other than that, just relax and let us handle the rest!"
     },
     {
         id: '7',
@@ -77,7 +77,7 @@ const data = [
     {
         id: '16',
         question: "What makes your cleaning service stand out from others?",
-        answer: "We are committed to: <br> - High-quality service with attention to detail <br> - Cleaning products that is convenient for all <br> - Fully insured and background-checked staff <br> - Customizable cleaning plans <br> - Friendly, reliable customer support <br> We go above and beyond to ensure your space is cleaned exactly to your satisfaction."
+        answer: "We are committed to: - High-quality service with attention to detail - Cleaning products that is convenient for all - Fully insured and background-checked staff - Customizable cleaning plans - Friendly, reliable customer support We go above and beyond to ensure your space is cleaned exactly to your satisfaction."
     },
     {
         id: '17',

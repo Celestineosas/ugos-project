@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Review.css';
+import { FaCircleCheck } from "react-icons/fa6";
+
 
 const ReviewForm = () => {
   const form = useRef();
@@ -65,7 +67,7 @@ const ReviewForm = () => {
     <div className="form-container">
       <form className='review-form' ref={form} onSubmit={handleSubmit}>
         <div className="firsthand">
-          <label htmlFor="name">Your Name</label>
+          <label className="text-left font-bold text-xl font-palanquin" htmlFor="name">Your Name</label>
           <input
             id="name"
             className="second-input"
@@ -75,7 +77,7 @@ const ReviewForm = () => {
             onChange={handleChange}
           />
           {errors.name && <p className="error">{errors.name}</p>}
-          <label htmlFor="email">Your Email</label>
+          <label className="text-left font-bold text-xl font-palanquin" htmlFor="email">Your Email</label>
           <input
             type="email"
             id="email"
@@ -87,7 +89,7 @@ const ReviewForm = () => {
         </div>
 
         <div>
-          <label htmlFor="rating">Your Rating</label>
+          <label className="text-left font-bold text-xl font-palanquin" htmlFor="rating">Your Rating</label>
           <select
             id="rating"
             className="second-input"
@@ -106,7 +108,7 @@ const ReviewForm = () => {
         </div>
 
         <div>
-          <label htmlFor="message">Message</label>
+          <label className="text-left font-bold text-xl font-palanquin" htmlFor="message">Message</label>
           <textarea
             id="message"
             className="second-input"
@@ -117,13 +119,20 @@ const ReviewForm = () => {
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
 
-        <button  type="submit" value="Send"  className="fform-btn">
-          Submit Review
+
+        <button type="submit" value="Send" className="fform-btn">
+          Send Message
         </button>
-        {message && <p>{message}</p>}
+      {message && (
+          <div className="message-pop">
+            <FaCircleCheck className="message-logo mt-" />
+            <p>{message}</p>
+          </div>
+        )}
       </form>
     </div>
   );
 };
 
 export default ReviewForm;
+ 

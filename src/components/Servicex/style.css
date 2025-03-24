@@ -92,7 +92,7 @@
     cursor: pointer;
 
 }
-.bottom-span span :hover{
+.bottom-span span:hover{
     color: green;
 }
 

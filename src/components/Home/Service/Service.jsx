@@ -1,7 +1,7 @@
-import { React, useState, useEffect, useRef } from 'react'
-import './service.css'
+import React from "react"
 import { FaAward, FaShieldVirus } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import Button from '../../../reusables/Button';
 
 const Service = () => {
 
@@ -9,66 +9,39 @@ const Service = () => {
   function handleContactNavigate() {
     navigate('/Contact')
   }
-  const [scrolling, setScrolling] = useState(false);
 
-  const handleScrell = () => {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition > 800) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScrell)
-    return () => {
-      window.removeEventListener("scroll", handleScrell)
-    }
-  },
-    []);
-
-      const videoRef = useRef(null);
-      useEffect(() => {
-        if (videoRef.current) {
-          videoRef.current.play().catch(error => {
-            console.log('Autoplay failed:', error);
-          });
-        }
-      }, []); 
-    
   return (
-    <div className='service-container'>
-      <div className='service-content'>
-        <div className={`service-description ${scrolling ? "show-left-scroll" : ""}`}>
-          <h3>Check Us out</h3>
-          <h1>We maintain healthy,<br></br> environments through<br></br>our services</h1>
-          <p>Explore our range of professional cleaning services designed to meet your needs and exceed your expectations. Quality guaranteed!</p>
-          <div onClick={handleContactNavigate} className='service-cta'>Contact us </div>
-          <div className="service-video">
-            <h1>Spotless Results,<br></br> Every Time</h1>
-            <video width="310" height="360" controls ref={videoRef} muted loop>
-              <source src="./videos/VID-20250301-WA0057.mp4" type="video/mp4" />
-            </video>
-          </div>
+    <section className='padding flex justify-between items-center max-lg:flex-col gap-10 w-full max-container bg-[#b8d576]'>
+      <div className='flex flex-1 flex-col'>
+        <h3 className='text-[#3a4e1c] text-center text-xl font-semibold font-montserrat px-3 py-4'>Check Us Out</h3>
+        <h2 className="xl:mt-10 mt-5 font-palanquin text-[#2e3d12] capitalize lg:max-w-lg text-4xl max-sm:text-3.5xl max-sm:text-center font-bold">
+          We maintain healthy,<br></br> environment through<br></br>our services
+        </h2>
+        <p className=" mt-4 text-sm font-palanquin leading-normal text-white lg:max-w-lg">Explore our range of professional cleaning services designed to meet your needs and exceed your expectations. Quality guaranteed!</p>
+        <div className='mt-11 flex gap-5 ' onClick={handleContactNavigate}>
+          <Button label="Contact Us" text="text-white" />
         </div>
-        <div className={`service-layer ${scrolling ? "show-left-scroll" : ""}`}>
-          <img className='service-layer-img' src='./images/cleaningservice-rafiki2.png' alt='layer-img' />
-          <div className='layer-content'>
-            <div className='layerX'>
-              <FaAward size='2.8rem' />
-              <h3>Our Mission in cleaning</h3>
-              <p>To deliver exceptional cleaning services that enhance your space, ensuring comfort, cleanliness, and peace of mind.</p>
-            </div>
-            <div className='layerX'>
-              <FaShieldVirus size='2.8rem' color='green' />
-              <h3>Our Vision in cleaning</h3>
-              <p>To become the trusted leader in cleaning solutions, setting new standards for quality and customer satisfaction.</p>
-            </div>
+
+      </div>
+      <div className='flex flex-col gap-10 justify-center items-center max-xl:mb-20'>
+        <div className='flex flex-1 justify-center items-center'>
+          <img src='./images/cleaning-img.png' alt='backgrondImg' width={570} height={520} className='pointer-events-none object-contain lg:mt-0 -mt-36 max-sm:-mt-24' />
+        </div>
+        <div className='flex flex-col sm:flex-row text-center gap-5 w-full sm:w-[400px] md:w-[450px] lg:w-[550px] xl:w-[600px] max-xl:-m-10 '>
+          <div className='flex gap-3 flex-col items-center text-center shadow-custom p-5'>
+            <FaAward size='2.8rem' />
+            <h3 className="text-[#2e3d12] font-montserrat font-semibold text-2xl">Our Mission in cleaning</h3>
+            <p className="font-palanquin text-[#3a4e1c]">To deliver exceptional cleaning services that enhance your space, ensuring comfort, cleanliness, and peace of mind.</p>
+          </div>
+          <div className='flex gap-3 flex-col items-center text-center shadow-custom p-5'>
+            <FaShieldVirus size='2.8rem' color='green' />
+            <h3 className="text-[#2e3d12] font-montserrat font-semibold text-2xl">Our Vision in cleaning</h3> 
+            <p className="font-palanquin text-[#3a4e1c]">To become the trusted leader in cleaning solutions, setting new standards for quality and customer satisfaction.</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+   
   )
 }
 
