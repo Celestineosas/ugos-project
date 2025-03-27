@@ -13,8 +13,8 @@ const Footer = () => {
       <div className="flex gap-20 max-lg:gap-10 lg:flex-row flex-col items-start">
         <div className='flex items-start justify-between gap-10 flex-1 w-full'>
           <div className='flex flex-col gap-7'>
-            <h2 className="font-palanquin text-3xl text-white font-bold">Aimer Cleaning</h2>
-            <p className="font-palanquin text-gray-500 mt-3 md:max-w-md" >Premium cleaning services tailored to your needs, ensuring a spotless, fresh, and inviting space every time. Quality guaranteed!.</p>
+            <h2 className="font-palanquin text-3xl text-[#137335] font-bold">Aimer Cleaning</h2>
+            <p className="font-palanquin text-gray-500 mt-3 md:max-w-md" >Premium cleaning services tailored to your needs, ensuring a spotless, fresh, and inviting space every time. Quality guaranteed.</p>
             <div className="flex flex-1 gap-5 mt-5">
               <a className='text-white text-2xl' href='https://www.facebook.com/share/1A3piEU3uN/?mibextid=wwXIfr'>
                 <FiFacebook />
@@ -44,8 +44,8 @@ const Footer = () => {
           <div className='flex flex-col gap-5'>
             <h2 className="font-montserrat text-white text-xl whitespace-nowrap font-bold">Our Services</h2>
             <ul className="flex flex-col text-gray-500 gap-5">
-              <li>House / Air bnb Cleaning</li>
-              <li>Commercial / Residential Cleaning</li>
+              <li>Residential / Air bnb Cleaning</li>
+              <li>Commercial Cleaning</li>
               <li>Post Construction</li>
               <li>Floor Cleaning</li>
             </ul>

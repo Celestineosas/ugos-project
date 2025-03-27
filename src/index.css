@@ -53,6 +53,6 @@
   }
 
   .info-text {
-    @apply font-montserrat text-white-400 text-sm leading-normal;
+    @apply font-montserrat text-gray-500 text-sm leading-normal;
   }
 }

@@ -6,24 +6,24 @@ const Servicex = () => {
     <section className='padding flex justify-center items-center flex-col gap-10 w-full max-container'>
       <div className='flex flex-1 flex-col mt-16'>
 
-        <h2 className="xl:mt-10 mt-5 font-palanquin text-[#2e3d12] text-4xl max-sm:text-3.5xl font-bold">
+        <h2 className="xl:mt-10 mt-5 font-palanquin text-black text-4xl max-sm:text-3.5xl font-bold">
           OUR CLEANING SERVICES
         </h2>
       </div>
       <div className='grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 mt-3 gap-14'>
         <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
           <img className="w-full h-[250px] object-cover" src='./images/istockphoto-1393767097-612x612.jpg' alt='blog-img' />
-          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">OFFICE CLEANING</h3>
-          <ul className='mt-5 text-[#3a4e1c]'>
-            <li>Vacuum Sweep Floors</li>
+          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">OFFICE CLEANING</h3>
+          <ul className='mt-5 text-gray-500 list-disc ml-5'>
+            <li>Vacuum / Sweep Floors</li>
             <li>Tables, Screens, Printers Cleaning</li>
             <li>Washroom cleaning and more</li>
           </ul>
         </div>
         <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
           <img className="w-full h-[250px] object-cover" src='./images/istockphoto-2161323689-612x612.jpg' alt='blog-img' />
-          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">RESIDENTIAL/Air bnb CLEANING</h3>
-          <ul className='mt-5 text-[#3a4e1c]'>
+          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">RESIDENTIAL/Air bnb CLEANING</h3>
+          <ul className='mt-5 text-gray-500 list-disc ml-5'>
             <li>Vacuum / Sweep Floors</li>
             <li>Oven And Microwave Cleaning</li>
             <li>Refrigerator Cleaning</li>
@@ -37,8 +37,8 @@ const Servicex = () => {
         </div>
         <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
           <img className="w-full h-[250px] object-cover" src='./images/istockphoto-1316473356-612x612.jpg' alt='blog-img' />
-          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">COMMERCIAL CLEANING</h3>
-          <ul className='mt-5 text-[#3a4e1c]'>
+          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">COMMERCIAL CLEANING</h3>
+          <ul className='mt-5 text-gray-500 list-disc ml-5'>
             <li>Vacuum Floors</li>
             <li>Floor wash</li>
             <li>Surface Cleaning</li>
@@ -48,8 +48,8 @@ const Servicex = () => {
         </div>
         <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
           <img className="w-full h-[250px] object-cover" src='./images/istockphoto-1408477638-612x612.jpg' alt='blog-img' />
-          <h3 className="text-[#2e3d12] font-montserrat mt-5 font-semibold text-xl">POST CONSTRUCTION</h3>
-          <ul className='mt-5 text-[#3a4e1c]'>
+          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">POST CONSTRUCTION</h3>
+          <ul className='mt-5 text-gray-500 list-disc ml-5'>
             <li>Debris Removal</li>
             <li>Window Washing</li>
             <li>Surface Cleaning</li>

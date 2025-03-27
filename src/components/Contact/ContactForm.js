@@ -11,7 +11,7 @@ const ContactForm = () => {
     message: "",
   });
   const [message, setMessage] = useState("");
-
+  const [isSubmitting, setIsSubmitting] = useState(false); 
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -34,10 +34,10 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log("Form submitted", formData);
-    }
-
+    
+    if (!validateForm()) return; 
+    setIsSubmitting(true);
+    
     emailjs
       .sendForm("service_y4zxynk", "template_0mktefc", form.current, {
         publicKey: "n86KGuoT1hi5VG0r9",
@@ -53,15 +53,17 @@ const ContactForm = () => {
           setMessage("Message Sent Successfully!");
         },
         (error) => {
-          setMessage("Failed to send message. please try again ");
+          setMessage("Failed to send message. Please try again.");
         }
       )
       .finally(() => {
+        setIsSubmitting(false);
         setTimeout(() => {
           setMessage("");
         }, 5000);
       });
   };
+
   return (
     <div className="form-container">
       <form ref={form} onSubmit={handleSubmit}>
@@ -75,7 +77,8 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
           />
-          {errors.name && <p className="error"></p>}
+          {errors.name && <p className="error">{errors.name}</p>}
+          
           <label className="text-left font-bold text-xl font-palanquin" htmlFor="email">Your Email</label>
           <input
             type="email"
@@ -113,12 +116,18 @@ const ContactForm = () => {
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
 
-        <button type="submit" value="Send" className="fform-btn">
-          Send Message
+        <button 
+          type="submit" 
+          value="Send" 
+          className="fform-btn"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Sending..." : "Send Message"}
         </button>
+        
         {message && (
           <div className="message-pop">
-            <FaCircleCheck className="message-logo mt-3" />
+            <FaCircleCheck className="message-logo mt-1" />
             <p>{message}</p>
           </div>
         )}

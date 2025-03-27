@@ -69,11 +69,11 @@ const Navbar = () => {
       initial={{ y: 0, opacity: 1 }} 
       animate={controls} 
       transition={{ type: 'spring', stiffness: 100, damping: 15 }}
-      className="padding-x py-5 fixed z-10 w-full bg-[#b8d576]"
+      className="padding-x py-5 fixed z-10 w-full bg-[#fde7b3]"
     >
       <div className="flex justify-between items-center max-container">
         <a href="/">
-          <h2 className="text-white text-2xl font-montserrat leading-normal font-extrabold">
+          <h2 className="text-[#137335] text-2xl font-montserrat leading-normal font-extrabold">
             Aimer Cleaning
           </h2>
         </a>
@@ -81,27 +81,27 @@ const Navbar = () => {
     
         <ul className="flex justify-center items-center gap-14 max-xl:gap-6 max-lg:hidden">
           <li>
-            <a onClick={handleHomeNavigate} className="text-white font-montserrat leading-normal text-md">
+            <a onClick={handleHomeNavigate} className="text-gray-600 font-montserrat leading-normal text-md">
               Home
             </a>
           </li>
           <li>
-            <a onClick={handleAboutNavigate} className="text-white font-montserrat leading-normal text-md">
+            <a onClick={handleAboutNavigate} className="text-gray-600 font-montserrat leading-normal text-md">
               About us
             </a>
           </li>
           <li>
-            <a onClick={handleServiceNavigate} className="text-white font-montserrat leading-normal text-md">
+            <a onClick={handleServiceNavigate} className="text-gray-600 font-montserrat leading-normal text-md">
               Services
             </a>
           </li>
           <li>
-            <a onClick={handleReviewNavigate} className="text-white font-montserrat leading-normal text-md">
+            <a onClick={handleReviewNavigate} className="text-gray-600 font-montserrat leading-normal text-md">
               Reviews
             </a>
           </li>
           <li>
-            <a onClick={handleContactNavigate} className="text-white font-montserrat leading-normal text-md">
+            <a onClick={handleContactNavigate} className="text-gray-600 font-montserrat leading-normal text-md">
               Contact
             </a>
           </li>
@@ -109,7 +109,7 @@ const Navbar = () => {
 
    
         <div onClick={handleContactNavigate} className="flex max-lg:hidden wide:mr-24">
-          <Button label="Free Consultation" text="text-white" />
+          <Button label="Free Consultation" />
         </div>
 
 
@@ -121,7 +121,7 @@ const Navbar = () => {
           {isOpen ? (
             <FaTimes className="text-3xl z-11 text-black" />
           ) : (
-            <TiThMenu className="text-3xl" />
+            <TiThMenu className="text-3xl text-black" />
           )}
         </button>
 
@@ -157,7 +157,7 @@ const Navbar = () => {
               </a>
             </li>
             <div onClick={handleContactNavigate} className="flex wide:mr-24">
-              <Button label="Free Consultation" text="text-white" />
+              <Button label="Free Consultation" />
             </div>
           </ul>
         </div>

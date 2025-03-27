@@ -11,12 +11,12 @@ import { FaYoutube } from "react-icons/fa";
 const Contact = () => {
     return (
 
-        <section className='padding-x sm:py-36 py-24 flex justify-between items-center text-center gap-10 w-full max-container flex-col bg-[#b8d576]'>
+        <section className='padding-x sm:py-36 py-24 flex justify-between items-center text-center gap-10 w-full max-container flex-col bg-[#fde7b3]'>
           <div className='flex flex-1 flex-col'>
-            <h2 className="xl:mt-10 mt-5 font-palanquin text-[#2e3d12] capitalize lg:max-w-lg text-4xl max-sm:text-3.5xl font-bold">
+            <h2 className="xl:mt-10 mt-5 font-palanquin text-black capitalize lg:max-w-lg text-4xl max-sm:text-3.5xl font-bold">
             Get In Touch
-              <p className=" mt-4 text-sm font-palanquin leading-normal text-white lg:max-w-lg">
-              We will respond promptly and provide you with professional cleaning services tailored to your needs. Let us make your space spotless and inviting!.</p>
+              <p className=" mt-4 text-sm font-palanquin leading-normal text-gray-500 lg:max-w-lg">
+              We will respond promptly and provide you with professional cleaning services tailored to your needs. Let us make your space clean and inviting.</p>
             </h2>
           </div>
           
@@ -25,7 +25,7 @@ const Contact = () => {
                 <div className='contact-card'>
                     <span className='contact-info'>
                         <h2>Contact Information</h2>
-                        <p>We will exceed your expectations with our professional cleaning services. Contact us!</p>
+                        <p>We will exceed your expectations with our professional cleaning services. Contact us</p>
                     </span>
                     <span className='contact-details'>
                         <FaPhoneAlt className='play mt-1' />

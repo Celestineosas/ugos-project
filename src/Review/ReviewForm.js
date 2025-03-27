@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import './Review.css';
 import { FaCircleCheck } from "react-icons/fa6";
 
-
 const ReviewForm = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -13,6 +12,7 @@ const ReviewForm = () => {
     message: '',
   });
   const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -34,33 +34,34 @@ const ReviewForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log('Form submitted', formData);
+    if (!validateForm()) return;
 
-      emailjs
-        .sendForm('service_y4zxynk', 'template_0mktefc', form.current, {
-          publicKey: 'n86KGuoT1hi5VG0r9',
-        })
-        .then(
-          () => {
-            setFormData({
-              name: '',
-              email: '',
-              rating: '',
-              message: '',
-            });
-            setMessage('Review Sent Successfully!');
-          },
-          (error) => {
-            setMessage('Failed to send review. Please try again.');
-          }
-        )
-        .finally(() => {
-          setTimeout(() => {
-            setMessage('');
-          }, 5000);
-        });
-    }
+    setIsSubmitting(true);
+
+    emailjs
+      .sendForm('service_y4zxynk', 'template_0mktefc', form.current, {
+        publicKey: 'n86KGuoT1hi5VG0r9',
+      })
+      .then(
+        () => {
+          setFormData({
+            name: '',
+            email: '',
+            rating: '',
+            message: '',
+          });
+          setMessage('Review Sent Successfully!');
+        },
+        (error) => {
+          setMessage('Failed to send review. Please try again.');
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+        setTimeout(() => {
+          setMessage('');
+        }, 5000);
+      });
   };
 
   return (
@@ -119,11 +120,16 @@ const ReviewForm = () => {
           {errors.message && <p className="error">{errors.message}</p>}
         </div>
 
-
-        <button type="submit" value="Send" className="fform-btn">
-          Send Message
+        <button 
+          type="submit" 
+          value="Send" 
+          className="fform-btn"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
-      {message && (
+
+        {message && (
           <div className="message-pop">
             <FaCircleCheck className="message-logo mt-" />
             <p>{message}</p>
@@ -135,4 +141,3 @@ const ReviewForm = () => {
 };
 
 export default ReviewForm;
- 

@@ -11,17 +11,15 @@ import { FaYoutube } from "react-icons/fa";
 
 const Book = () => {
     return (
-        <section className='padding-x sm:py-36 py-24 flex justify-between items-center text-center gap-10 w-full max-container flex-col bg-[#b8d576]'>
+        <section className='padding-x sm:py-36 py-24 flex justify-between items-center text-center gap-10 w-full max-container flex-col bg-[#fde7b3]'>
             <div className='flex flex-1 flex-col'>
-                <h2 className="xl:mt-10 mt-5 font-palanquin text-[#2e3d12] capitalize lg:max-w-lg text-4xl max-sm:text-3.5xl font-bold">
+                <h2 className="xl:mt-10 mt-5 font-palanquin text-black capitalize lg:max-w-lg text-4xl max-sm:text-3.5xl font-bold">
                     Book Our Services
-                    <p className=" mt-4 text-sm font-palanquin leading-normal text-white lg:max-w-lg">
+                    <p className=" mt-4 text-sm font-palanquin leading-normal text-gray-500 lg:max-w-lg">
                         Fill out the form below to book our professional cleaning services. We look forward to making your space spotless</p>
                 </h2>
             </div>
-            {/* // <section className='book-container'>
-        //     <h1>Book Our Services</h1>
-        //     <p>Fill out the form below to book our professional cleaning services. We look forward to making your space spotless!</p> */}
+
             <div className='book-content'>
                 <div className='book-card mb-5' >
                     <span className='book-info'>

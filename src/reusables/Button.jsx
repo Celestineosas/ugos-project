@@ -4,7 +4,7 @@ const Button = ({ label, backgroundColor, text, iconURL }) => {
   return (
     <button
       className={`flex justify-center cursor-pointer items-center whitespace-nowrap font-semibold rounded px-7 py-4 leading-none font-montserrat text-lg ${
-        backgroundColor ? `${backgroundColor}` : "bg-[#4f6f1d]"
+        backgroundColor ? `${backgroundColor}` : "bg-[#f1ad10]"
       } ${text ? `${text}` : "text-black"}`}
     >
       {label}
