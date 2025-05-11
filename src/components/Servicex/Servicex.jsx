@@ -22,7 +22,7 @@ const Servicex = () => {
         </div>
         <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
           <img className="w-full h-[250px] object-cover" src='./images/istockphoto-2161323689-612x612.jpg' alt='blog-img' />
-          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">RESIDENTIAL/Air bnb CLEANING</h3>
+          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">RESIDENTIAL / Air bnb CLEANING</h3>
           <ul className='mt-5 text-gray-500 list-disc ml-5'>
             <li>Vacuum / Sweep Floors</li>
             <li>Oven And Microwave Cleaning</li>

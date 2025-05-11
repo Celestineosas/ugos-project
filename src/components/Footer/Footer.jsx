@@ -15,6 +15,7 @@ const Footer = () => {
           <div className='flex flex-col gap-7'>
             <h2 className="font-palanquin text-3xl text-[#137335] font-bold">Aimer Cleaning</h2>
             <p className="font-palanquin text-gray-500 mt-3 md:max-w-md" >Premium cleaning services tailored to your needs, ensuring a spotless, fresh, and inviting space every time. Quality guaranteed.</p>
+
             <div className="flex flex-1 gap-5 mt-5">
               <a className='text-white text-2xl' href='https://www.facebook.com/share/1A3piEU3uN/?mibextid=wwXIfr'>
                 <FiFacebook />
@@ -29,6 +30,12 @@ const Footer = () => {
                 <FaYoutube />
               </a>
             </div>
+            <div className="mt-10">
+            <p className=" text-sm font-palanquin leading-normal text-gray-500 lg:max-w-lg">
+             We are also a proud member of the Winnipeg Chamber of Commerce — supporting local business and community growth.
+            </p>
+              <img src="./images/binders.jpeg" alt="banner" className="w-[300px] mt-5" />
+            </div>
           </div>
           <div className='flex flex-col gap-5 items-start'>
             <h2 className="font-palanquin text-white text-2xl font-bold">Company</h2>
@@ -38,6 +45,7 @@ const Footer = () => {
               <li><Link to="/FAQ" >FAQ+</Link></li>
               <li><Link to="/Review" >Reviews</Link></li>
             </ul>
+            
           </div>
         </div>
         <div className='flex justify-between items-start w-full gap-10 flex-1 mt-6'>
@@ -60,7 +68,7 @@ const Footer = () => {
       </div>
 
       <div className='flex border-t border-gray-400 items-start justify-between gap-10 flex-1 w-full mt-10'>
-        <p className="text-sm text-gray-500 pt-5">All rights Resered @2025 </p>
+        <p className="text-sm text-gray-500 pt-5">All Rights Reserved @2025 </p>
         <p className="text-sm text-gray-500 pt-5">
           <a href="https://www.x.com/anontextm">Website by AnonDev</a></p>
       </div>

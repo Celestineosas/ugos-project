@@ -13,6 +13,13 @@ const Aboutx = () => {
               <p className=" mt-4 text-sm font-palanquin leading-normal text-gray-500 lg:max-w-lg">Welcome to AIMER CLEANING SERVICES, where cleanliness meets passion! We are a family-owned cleaning company founded by two individuals who have a genuine love for cleaning. Our passion for making spaces shine is what led us to create this company, and it’s at the heart of everything we do.
                At AIMER CLEANING SERVICES, we believe that a clean environment not only looks good but also promotes well-being and productivity. Be it your home, office, or company space, we are dedicated to delivering top-notch cleaning services that leave every corner sparkling.</p>
             </h2>
+            <div className="mt-10">
+            <p className=" text-sm font-palanquin leading-normal text-gray-500 lg:max-w-lg">
+             We are also a proud member of the Winnipeg Chamber of Commerce — supporting local business and community growth.
+            </p>
+              <img src="./images/binders.jpeg" alt="banner" className="w-[500px] mt-5" />
+            </div>
+            
           </div>
           <div className='flex flex-col gap-14 justify-center items-center mt-10'>
             <div className='flex lg:flex-row flex-col justify-center items-center'>
