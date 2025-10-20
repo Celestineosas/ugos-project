@@ -52,11 +52,15 @@ const Footer = () => {
           <div className='flex flex-col gap-5'>
             <h2 className="font-montserrat text-white text-xl whitespace-nowrap font-bold">Our Services</h2>
             <ul className="flex flex-col text-gray-500 gap-5">
-              <li>Residential / Air bnb Cleaning</li>
+              <li>Residential Cleaning</li>
               <li>Commercial Cleaning</li>
               <li>Post Construction</li>
-              <li>Floor Cleaning</li>
+              {/* <li>Floor Cleaning</li> */}
             </ul>
+          </div>
+          <div className='flex flex-col gap-5'>
+            <h2 className="font-montserrat text-white text-xl whitespace-nowrap font-bold">Our Client</h2>
+            <img src="/images/IMG-20251019-WA0003.jpg" alt="NorthTowne" className='w-[120px] sm:w-[150px] md:w-[180px] object-contain shadow-sm mx-0 md:mx-auto'/>
           </div>
           <div className='flex flex-col gap-5'>
             <h2 className="font-montserrat text-white text-xl font-bold whitespace-nowrap">Contact us</h2>
