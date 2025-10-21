@@ -25,18 +25,18 @@ const Blog = () => {
   }, [textControls]);
 
   const ReviewElement = reviewData.map((reviewItem) => (
-    <div className='flex flex-1 flex-col w-full max-sm:w-full items-center' key={reviewItem.id}>
+    <div className='flex flex-col w-full items-center' key={reviewItem.id}>
       {/* <img className="w-full h-[350px] object-cover" src={reviewItem.img} alt='blog-img' /> */}
-      <div className='flex mt-5 gap-32'>
-        <p className='font-montserrat text-black text-lg font-semibold'>{reviewItem.service}</p>
+      <div className='flex mt-5 w-full justify-between'>
+        <p className='font-montserrat text-black text-md font-medium'>{reviewItem.service}</p>
         <div className='flex gap-2'>
           <FaStar color='gold' />
           <p className='font-montserrat text-gray-500 text-sm font-semibold'>{reviewItem.rating}</p>
         </div>
       </div>
-      <div className='mt-5'>
-        <h3 className="text-black text-left font-montserrat mt-5 font-semibold text-xl">{reviewItem.name}</h3>
-        <p className="font-palanquin text-gray-500 mt-3">{reviewItem.comment}</p>
+      <div className='mt-3 w-full flex flex-col items-start '>
+        <h3 className="text-black text-left font-montserrat mt-5 font-semibold text-lg">{reviewItem.name}</h3>
+        <p className="font-palanquin text-gray-500 mt-3 text-sm">{reviewItem.comment}</p>
       </div>
     </div>
   ));
