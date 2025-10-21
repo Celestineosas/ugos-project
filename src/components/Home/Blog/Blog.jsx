@@ -26,7 +26,7 @@ const Blog = () => {
 
   const ReviewElement = reviewData.map((reviewItem) => (
     <div className='flex flex-1 flex-col w-full max-sm:w-full items-center' key={reviewItem.id}>
-      <img className="w-full h-[350px] object-cover" src={reviewItem.img} alt='blog-img' />
+      {/* <img className="w-full h-[350px] object-cover" src={reviewItem.img} alt='blog-img' /> */}
       <div className='flex mt-5 gap-32'>
         <p className='font-montserrat text-black text-lg font-semibold'>{reviewItem.service}</p>
         <div className='flex gap-2'>

@@ -4,6 +4,7 @@ import Header from './Header/Header';
 import Service from './Service/Service';
 import Cleaning from './Cleaning/Cleaning';
 import Blog from './Blog/Blog';
+import Partner from './Partner/Partners';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Service />
       <Cleaning />
       <Blog />
+      <Partner name="NORTHTOWNE PROPERTIES" />
     </>
   )
 }

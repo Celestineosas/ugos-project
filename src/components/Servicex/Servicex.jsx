@@ -11,7 +11,7 @@ const Servicex = () => {
         </h2>
       </div>
       <div className='grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 mt-3 gap-14'>
-        <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
+        {/* <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
           <img className="w-full h-[250px] object-cover" src='./images/istockphoto-1393767097-612x612.jpg' alt='blog-img' />
           <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">OFFICE CLEANING</h3>
           <ul className='mt-5 text-gray-500 list-disc ml-5'>
@@ -19,10 +19,10 @@ const Servicex = () => {
             <li>Tables, Screens, Printers Cleaning</li>
             <li>Washroom cleaning and more</li>
           </ul>
-        </div>
+        </div> */}
         <div className='flex flex-1 flex-col w-full max-sm:w-full  '>
           <img className="w-full h-[250px] object-cover" src='./images/istockphoto-2161323689-612x612.jpg' alt='blog-img' />
-          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">RESIDENTIAL / Air bnb CLEANING</h3>
+          <h3 className="text-black font-montserrat mt-5 font-semibold text-xl">RESIDENTIAL CLEANING</h3>
           <ul className='mt-5 text-gray-500 list-disc ml-5'>
             <li>Vacuum / Sweep Floors</li>
             <li>Oven And Microwave Cleaning</li>
